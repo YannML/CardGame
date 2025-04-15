@@ -1,0 +1,71 @@
+body {
+    font-family: 'Garamond', serif;
+    background: #0f0f0f;
+    color: #f3e5ab;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #lobby, #game {
+    padding: 20px;
+  }
+  
+  .card {
+    background: #1e1e1e;
+    border: 2px solid #a40e4c;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(255, 0, 77, 0.7);
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #ff4e4e;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  button {
+    background: #a40e4c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background: #ff4e4e;
+  }
+  
+  .pacto {
+    border-color: #6f42c1;
+  }
+  
+  .desejo {
+    border-color: #00c853;
+  }
+  
+  .penitência {
+    border-color: #ffab00;
+  }
+  
+  .intervenção {
+    border-color: #00bcd4;
+  }
+  
+  .objetivo {
+    border-color: #c51162;
+  }

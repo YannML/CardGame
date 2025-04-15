@@ -1,0 +1,19 @@
+// firebase-config.js
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+import { getDatabase, ref, onValue, set, update } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAEnU4ryoeXgWMBOvdjZcxgh-JJZU9DEfg",
+  authDomain: "pactosepecados.firebaseapp.com",
+  databaseURL: "https://pactosepecados-default-rtdb.firebaseio.com",
+  projectId: "pactosepecados",
+  storageBucket: "pactosepecados.firebasestorage.app",
+  messagingSenderId: "109421029524",
+  appId: "1:109421029524:web:2c8aec650d05ccfa16ec81",
+  measurementId: "G-5LCZKGLWKK"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+export { db, ref, onValue, set, update };

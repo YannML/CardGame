@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pactos e Pecados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="lobby">
+    <h1>Pactos e Pecados</h1>
+    <input type="text" id="playerName" placeholder="Seu nome" />
+    <button onclick="joinGame()">Entrar na Partida</button>
+    <div id="roomIdDisplay"></div>
+  </div>
+
+  <div id="game" class="hidden">
+    <h2>Jogador Atual: <span id="currentPlayer">---</span></h2>
+    <div id="cardDisplay"></div>
+    <button onclick="drawCard()">Puxar Carta</button>
+  </div>
+
+  <script type="module">
+    import { initMatchmaking } from './matchmaking.js';
+    import { startGameLogic } from './game.js';
+    import { drawCard } from './ui.js';
+
+    window.joinGame = async function() {
+      await initMatchmaking();
+      startGameLogic();
+    };
+
+    window.drawCard = drawCard;
+  </script>
+</body>
+</html>
