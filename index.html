@@ -20,15 +20,7 @@
     <button onclick="drawCard()">Puxar Carta</button>
   </div>
 
-  <script type="module">
-    import { initMatchmaking } from './matchmaking.js';
-    import { startGameLogic } from './game.js';
-    import { drawCard } from './ui.js';
-
-    window.joinGame = async function() {
-      await initMatchmaking();
-      startGameLogic();
-    };
+  <script type="module" src="main.js"></script>
 
     window.drawCard = drawCard;
   </script>

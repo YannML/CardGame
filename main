@@ -1,0 +1,10 @@
+import { initMatchmaking } from './matchmaking.js';
+import { startGameLogic } from './game.js';
+import { drawCard } from './ui.js';
+
+window.joinGame = async function() {
+  await initMatchmaking();
+  startGameLogic();
+};
+
+window.drawCard = drawCard;
